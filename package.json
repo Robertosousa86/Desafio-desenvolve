@@ -1,0 +1,24 @@
+{
+  "name": "desafio-desenvolve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robertosousa86/Desafio-desenvolve.git"
+  },
+  "keywords": [
+    "ejs",
+    "Node",
+    "MongoDB"
+  ],
+  "author": "Roberto Sousa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Robertosousa86/Desafio-desenvolve/issues"
+  },
+  "homepage": "https://github.com/Robertosousa86/Desafio-desenvolve#readme"
+}
