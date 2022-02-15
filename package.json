@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/Robertosousa86/Desafio-desenvolve/issues"
   },
-  "homepage": "https://github.com/Robertosousa86/Desafio-desenvolve#readme"
+  "homepage": "https://github.com/Robertosousa86/Desafio-desenvolve#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
 }
