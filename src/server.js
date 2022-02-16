@@ -8,7 +8,7 @@ const PORT = process.env.HOST;
     const app = await setupApp();
 
     const server = app.listen(PORT, () =>
-      console.info(`App running at http://localhost:${PORT}`)
+      console.info(`App running at http://localhost:${PORT}/register`)
     );
 
     const exitSignals = ['SIGINT', 'SIGTERM', 'SIGQUIT'];
