@@ -1,17 +1,59 @@
-<h1>Register</h1>
-<form action="/register" method="POST">
-  <div>
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required />
-  </div>
-  <div>
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required />
-  </div>
-  <div>
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required />
-  </div>
-  <button type="submit">Register</button>
-</form>
-<a href="/login">Login</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./javascript/mainScript.js"></script>
+    <title>Find your team</title>
+  </head>
+  <body>
+    <form class="form" action="/register" method="POST">
+      <div class="title">Invocador</div>
+      <div class="subtitle">Cadastre-se gratuitamente!</div>
+      <div class="input-container ic1">
+        <input
+          id="name"
+          name="name"
+          class="input"
+          type="text"
+          placeholder=" "
+          required
+        />
+        <div class="cut"></div>
+        <label for="name" class="placeholder">Nome de Usuário(a)</label>
+      </div>
+      <div class="input-container ic2">
+        <input
+          id="email"
+          name="email"
+          class="input"
+          type="email"
+          placeholder=" "
+          required
+        />
+        <div class="cut cut-medium"></div>
+        <label for="email" class="placeholder">E-mail</label>
+      </div>
+      <div class="input-container ic2">
+        <input
+          id="password"
+          name="password"
+          class="input"
+          type="password"
+          placeholder=" "
+          required
+        />
+        <div class="cut cut-short"></div>
+        <label for="password" class="placeholder">Senha</label>
+      </div>
+      <button type="text" onclick="showData()" class="submit">Cadastrar</button>
+      <div class="link">
+        <a href="/login" target="_blank">Já possui cadastrado?</a>
+      </div>
+    </form>
+    
+  </body>
+</html>

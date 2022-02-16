@@ -1,13 +1,14 @@
 const express = require('express');
 const database = require('./config/database');
 const routes = require('./routes');
-
+const cors = require('cors');
 const app = express();
 
 app.use(express.json());
 app.set('view-engine', 'ejs');
 app.use(express.static('views'));
 app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
 // Configura o express e retornar uma nova instância da aplicação configurada.
 const configureExpress = () => {

@@ -24,7 +24,7 @@ class RegisterController {
 
       user.password = undefined;
 
-      return res.status(201);
+      return res.redirect('/login');
     } catch (err) {
       return res.send(err.message);
     }
