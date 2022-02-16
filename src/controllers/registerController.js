@@ -1,3 +1,6 @@
+const bcrypt = require('bcrypt');
+require('dotenv').config();
+
 class RegisterController {
   constructor(User) {
     this.User = User;
@@ -15,9 +18,13 @@ class RegisterController {
       if (await this.User.findOne({ email: req.body.email }))
         return res.status(400).send({ Message: 'E-mail já cadastrado.' });
 
+      user.password = await bcrypt.hash(user.password, 10);
+
       await user.save();
 
-      return res.status(201).send({ user });
+      user.password = undefined;
+
+      return res.status(201);
     } catch (err) {
       return res.send(err.message);
     }
